@@ -1,5 +1,6 @@
 # coronaSafety
 Let's fight this pandemic by Spreading Awareness.
+I used undraw.co for the illustrations.
 
 ## One rule of this community:
 We don't care if you break things. This is a playground and we encourage failing often. Use this as a practice ground and enjoy contributing to projects with other contributers. You will gain real world experience "working in teams" by working on these projects.
