@@ -1,12 +1,12 @@
 # coronaSafety
 Let's fight this pandemic by Spreading Awareness.
-I used undraw.co for the illustrations.
+We've used [unDraw](undraw.co) for the illustrations.
 
-## One rule of this community:
-We don't care if you break things. This is a playground and we encourage failing often. Use this as a practice ground and enjoy contributing to projects with other contributers. You will gain real world experience "working in teams" by working on these projects.
+## Rules of this community:
+**1**. We don't care if you break things. This is a playground and we encourage failing often. Use this as a practice ground and enjoy contributing to projects with other contributers. You will gain real world experience "working in teams" by working on these projects.
 
 
-**2**. Make your first Pull Request check this free how-to tutorial at http://makeapullrequest.com/), by adding your name to the `CONTRIBUTORS.md` file in the project.
+**2**. Make your first _Pull Request_ : check this free how-to tutorial at "[Make a Pull Request](http://makeapullrequest.com)", by adding your name to the `CONTRIBUTORS.md` file in the project.
  
 ## Anatomy of an open source project:
 Every open source community is different.
