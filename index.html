@@ -6,44 +6,212 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CoronaSafety</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d01c52956f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <div id="nav">
-      <h1 id="logo">CoronaSafety</h1>
+    <nav class="wrapper">
+      <div class="branding">
+        <h1>
+          Corona<span>Safety</span>
+        </h1>
+      </div>
 
-      <nav>
-        <ul id="headnav">
-          <li class="li-items home"><a href="#">Home</a></li>
-          <li class="li-items faq"><a href="#">Faq</a></li>
-          <li class="li-items dd"><a href="#">do's and dont's</a></li>
-          <li class="li-items help"><a href="#">Help</a></li>
-          <li class="li-items news"><a href="#">News</a></li>
+      <div class="header__links">
+        <ul class="header__nav" id="nav">
+          <li><a href="#symptoms">Symptoms</a></li>
+          <li><a href="#prevention">Prevention</a></li>
+          <li><a href="#data">Data</a></li>
+          <li><a href="#resources">Resources</a></li>
         </ul>
-      </nav>
-    </div>
+
+        <select id="lang__switch" class="lang__switch">
+          <option value="english" selected>English</option>
+          <option value="hindi">Hindi</option>
+          <option value="bengali">Bengali</option>
+          <option value="kannada">Kannada</option>
+          <option value="malyalam">Malyalam</option>
+        </select>
+      </div>
+    </nav>
   </header>
 
-  <body>
-    <div class="cover">
-      <div class="distancing">
-        <h2 class="eachother">Stay Safe during this pandemic.</h2>
-        <p class="moreinfo">Covid-19 is a highly contagious viral disease caused by coronavirus. Originated from Wuhan city of China it became a pandemic in so short time that the whole world got worried. More than 100,000 people died and still dying because of this virus. There's no medicine for this virus as of now but prevention is better than cure so We all have to face it together by maintaining social distancing. </p>
+  <section class="hero">
+    <div class="hero__inner wrapper">
+      <div class="hero__content">
+        <span>Novel CORONAVIRUS - COVID-19 Pandemic</span>
+        <h2>#StayHome #StaySafe</h2>
+
+        <p class="hero__intro">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo voluptates error qui aliquam rerum eaque
+          illum nulla. Mollitia animi et quae aspernatur!
+        </p>
+
+        <div class="hero__links">
+          <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" class="knowmore">Know More</a>
+          <a href="#prevention" class="prevention">Prevention</a>
+        </div>
+
+        <a href="#" class="xda__link">An Initiative by XDA Off-Coders</a>
       </div>
-      <div id="distance"><img src="distancing.svg" width="500vw"></div>
+
+      <div class="hero__image">
+        <img src="./images/06.svg" alt="CoronaVirus">
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" id="data">
+    <div class="stats__inner wrapper">
+      <div class="stats__bar">
+        <div class="stat__item confirmed">
+          <h3>Confirmed</h3>
+          <span class="number">Waiting...</span>
+        </div>
+
+        <div class="stat__item active">
+          <h3>Active</h3>
+          <span class="number">Waiting...</span>
+        </div>
+
+        <div class="stat__item recovered">
+          <h3>Recovered</h3>
+          <span class="number">Waiting...</span>
+        </div>
+
+        <div class="stat__item deceased">
+          <h3>Deceased</h3>
+          <span class="number">Waiting...</span>
+        </div>
+      </div>
+      <h5 class="updated__at">
+        Official Numbers, Last Updated -
+        <span class="last__updated">
+          [Waiting...]
+        </span>
+      </h5>
+    </div>
+  </section>
+
+  <section class="symptoms" id="symptoms">
+    <div class="wrapper">
+      <h3 class="section__title">
+        COVID-19 Symptoms
+      </h3>
+
+      <div class="symptoms__grid">
+        <div class="s__art">
+          <img src="./images/symptoms.svg" alt="">
+        </div>
+
+        <div class="s__content">
+          <p>
+            The most common symptoms of coronavirus disease (COVID-19) are <b>fever</b>, <b>tiredness</b>, and <b>dry
+              cough</b>. Most
+            people
+            (about 80%) recover from the disease without needing special treatment.
+          </p>
+
+          <p>
+            More rarely, the disease can be serious and even fatal. Older people, and people with other medical
+            conditions (such as asthma, diabetes, or heart disease), may be more vulnerable to becoming severely ill.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="prevention" id="prevention">
+    <div class="wrapper">
+      <h3 class="section__title">Prevention is the Cure</h3>
+
+      <div class="prevention__grid">
+        <div class="p__item">
+          <img src="./images/05.svg" alt="">
+
+          <h3>Maintain social distancing</h3>
+
+          <p>
+            Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.
+
+            When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may
+            contain virus.
+          </p>
+        </div>
+
+
+        <div class="p__item">
+          <img src="./images/01.svg" alt="">
+          <h3>Wash your hands frequently</h3>
+          <p>Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.
+            Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your
+            hands.
+          </p>
+        </div>
+
+        <div class="p__item">
+          <img src="./images/02.svg" alt="">
+          <h3>Wear a Mask if Its Essential to Go Out.</h3>
+          <p>Wear a mask if you are coughing or sneezing. Masks are effective only when used in combination with
+            frequent hand-cleaning with alcohol-based hand rub or soap and water. Read more about when & how to use
+            masks from <a href="#">WHO</a>.</p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="resources" id="resources">
+    <div class="wrapper">
+      <h3 class="section__title">
+        Resources & Information
+      </h3>
+
+      <div class="resources__grid">
+        <ul class="social">
+          <li><i class="fas fa-phone-square-alt"></i> Helpine - 011-23978046 & 1075</li>
+          <li><i class="fas fa-sitemap"></i> <a
+              href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">State/District wise details</a></li>
+          <li><i class="far fa-life-ring"></i> <a href="https://wa.me/919013151515">MyGov Corona Helpdesk</a></li>
+          <li><i class="fas fa-globe"></i> <a href="https://wa.me/919013151515">WHO - Advice for Public</a></li>
+          <li><i class="fas fa-external-link-square-alt"></i> <a
+              href="https://www.covid19india.org/">covid19india.org</a></li>
+        </ul>
+
+        <div class="social__hub">
+          <h3>MyGov Social Hub</h3>
+
+          <ul>
+            <li><a href="#" class="fb"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+            <li><a href="#" class="twit"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#" class="insta"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#" class="mess"><i class="fab fa-facebook-messenger"></i> Messenger</a></li>
+            <li><a href="#" class="wa"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="#" class="li"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="#" class="yt"><i class="fab fa-youtube"></i> YouTube</a></li>
+            <li><a href="#" class="tg"><i class="fab fa-telegram"></i> Telegram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="credits">
+      An Initiative By <a href="#">XDA OFF-Coders</a>.
     </div>
 
-    <div class="secpage">
-      <div>
-        <h2>hello</h2>
-        <p>hello again</p>
-      </div>
-      <div><img src=""></div>
-    </div>
-  </body>
+    <p>
+      Source is available on <a href="#">GitHub</a>.
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
