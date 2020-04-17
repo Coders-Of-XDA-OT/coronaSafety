@@ -1,3 +1,5 @@
+// [Reset.exe xD]
+
 html,
 body {
   height: 100%;
@@ -6,11 +8,6 @@ body {
 html {
   font-size: 14px;
   scroll-behavior: smooth;
-}
-
-:root {
-  --body-background: #ecf0f1;
-  --body-color: #4a5568;
 }
 
 *,
@@ -44,7 +41,14 @@ ol {
   list-style: none inside;
 }
 
-/* wrapper  */
+// [Custom Properties]
+
+:root {
+  --body-background: #ecf0f1;
+  --body-color: #4a5568;
+}
+
+// [Container Class - For Max-width & Centering]
 
 .wrapper {
   margin-left: auto;
@@ -54,6 +58,8 @@ ol {
   width: 100%;
 }
 
+// [Body - You Know It]
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
@@ -62,7 +68,7 @@ body {
   color: var(--body-color);
 }
 
-/* [Header] */
+// [Header - with Branding & Links]
 
 header {
   padding: 1.5rem 0;
@@ -70,6 +76,8 @@ header {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   z-index: 999;
 }
+
+// [Navigation]
 
 nav {
   display: flex;
@@ -87,6 +95,8 @@ nav {
   }
 }
 
+// [SelectNav.JS - <ul> becomes a <select> menu on mobile screens ]
+
 .selectnav {
   display: inline-block;
   appearance: none;
@@ -101,6 +111,8 @@ nav {
   display: none;
 }
 
+// [Some Media Queries for SelectNav]
+
 @media screen and (max-width: 989px) {
   .js #nav {
     display: none;
@@ -110,12 +122,16 @@ nav {
   }
 }
 
+//  [Navigation Links]
+
 .header__links {
   flex-basis: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+// [Language Swicther at Header]
 
 .lang__switch {
   display: inline-block;
@@ -131,11 +147,16 @@ nav {
   cursor: pointer;
 }
 
+// [Wrapper for Nav Links ]
+
 .header__nav {
   flex-basis: 80%;
+
   li {
     display: inline-block;
   }
+
+  // Adding Margin Left for Every Next <li> item
 
   li + li {
     margin-left: 2rem;
@@ -155,6 +176,8 @@ nav {
       }
     }
 
+    // [to get that nice hover effect on nav links]
+
     &::after {
       content: "";
       position: absolute;
@@ -170,16 +193,20 @@ nav {
   }
 }
 
-/* [Hero] */
+// [Hero Area ]
 
 .hero {
   padding: 5rem 0 4rem;
 }
 
+// [Hero Image - the Virus One]
+
 .hero__image {
   width: 300px;
   margin: 0 auto;
 }
+
+// [Content Wrapper for Hero ]
 
 .hero__content {
   margin-bottom: 1.5rem;
@@ -259,6 +286,8 @@ nav {
   }
 }
 
+// [The Stats Bar]
+
 .stats__bar {
   border-radius: 0.5rem;
   overflow: hidden;
@@ -268,6 +297,8 @@ nav {
   text-align: center;
   z-index: 1;
   position: relative;
+
+  // [Individual Stat Item - 4 Cards with diff. color treatment]
 
   .stat__item {
     padding: 2rem;
@@ -303,11 +334,13 @@ nav {
   }
 }
 
-// Symtoms
+// [Symtoms]
 
 .symptoms {
   padding: 3rem 0;
 }
+
+// [Symptoms Image]
 
 .s__art {
   max-width: 300px;
@@ -315,21 +348,29 @@ nav {
   margin-bottom: 2rem;
 }
 
+// [to align the symptoms image and content]
+
 .symptoms__grid {
   padding: 2rem 0;
 }
 
+// [Symptoms content]
+
 .s__content {
+  // [Adding a margin-top of 1.5rem for every next thing inside the content]
+
   > * + * {
     margin-top: 1.5rem;
   }
 }
 
-// Prevention
+// [Prevention]
 
 .prevention {
   padding: 3.5rem 0;
 }
+
+// [Section Title - Used in all sections]
 
 .section__title {
   font-size: 1.5rem;
@@ -339,9 +380,13 @@ nav {
   font-weight: 300;
 }
 
+// Adding margin-top of 1.5rem for prevention cards {Mobile only}
+
 .p__item + .p__item {
   margin-top: 1.5rem;
 }
+
+// Styling Prevention Card
 
 .p__item {
   background-color: #fff;
@@ -350,15 +395,21 @@ nav {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
+  // Prevention Image
+
   img {
     width: 200px;
     margin: 0 auto 1rem;
   }
 
+  // Prevention Heading
+
   h3 {
     font-weight: 700;
     line-height: 1.35;
   }
+
+  // Prevention Content
 
   p {
     color: #718096;
@@ -374,15 +425,22 @@ nav {
 }
 
 .resources__grid {
+  // Adding margin-top of 3rem for resource items/columns {Mobile only}
+
   > * + * {
     margin-top: 3rem;
   }
+
+  // Resources List - No Idea why I named it social 🤣🤣
+
   .social {
     background-color: #fff;
     border-radius: 0.25rem;
     overflow: hidden;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    // Adding border-top for every next list item
 
     li + li {
       border-top: 3px solid #ecf0f1;
@@ -400,16 +458,23 @@ nav {
     }
   }
 
+  // Social Links - Social Media Links Wrapper
+
   .social__hub {
+    // Heading for Social Media
     h3 {
       font-weight: 500;
       margin-bottom: 1rem;
     }
 
+    // Social media lists <ul>
+
     ul {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 0.5rem;
+
+      // Social Links - <a>
 
       a {
         display: block;
@@ -423,6 +488,8 @@ nav {
         &:hover {
           filter: brightness(110%);
         }
+
+        // Brand background colors
 
         &.fb,
         &.mess {
@@ -476,11 +543,15 @@ footer {
   }
 }
 
+// [Responsive Styles]
+
 @media (min-width: 769px) {
   .hero__content {
     max-width: 600px;
     margin: 0 auto 1.5rem;
   }
+
+  // Forcing the width to be max at 600 on tablet screens
 
   .p__item,
   .resources__grid,
@@ -491,6 +562,7 @@ footer {
 }
 
 @media (min-width: 900px) {
+  // Increasing the root font at 900px for readability
   html {
     font-size: 15.5px;
   }
