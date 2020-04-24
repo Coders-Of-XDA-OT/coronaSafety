@@ -307,6 +307,7 @@ nav .branding span {
   padding: 1.5rem;
   border-radius: 0.25rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: 300ms ease-in-out;
 }
 .p__item img {
   width: 200px;
@@ -320,6 +321,10 @@ nav .branding span {
   color: #718096;
   font-size: 0.94rem;
   margin-top: 1rem;
+}
+.p__item:hover{
+  transform: translateY(-4%);
+  box-shadow: 0 0 2px 2px lightgrey;
 }
 
 .resources {
@@ -335,17 +340,17 @@ nav .branding span {
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
-.resources__grid .social li + li {
-  border-top: 3px solid #ecf0f1;
-}
 .resources__grid .social li {
   padding: 1rem;
+  cursor: pointer;
+  border-top: 3px solid #ecf0f1;
+}
+.resources .social li:hover{
+  background:lightgray;
+  font-weight: 700;
 }
 .resources__grid .social a {
   transition: color 180ms ease;
-}
-.resources__grid .social a:hover {
-  color: #2ecc71;
 }
 .resources__grid .social__hub h3 {
   font-weight: 500;
