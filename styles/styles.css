@@ -452,7 +452,6 @@ footer a {
 .symptoms__grid {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   .symptoms__grid {
